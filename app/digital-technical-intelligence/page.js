@@ -1,0 +1,13 @@
+import PageHero from '../../components/PageHero';
+
+export const metadata={
+  title:'Digital & Technical Intelligence',
+  description:'Digital artefact, metadata, record, communications and authorised technical evidence review from ORVIA Security & Intelligence.',
+  alternates:{canonical:'/digital-technical-intelligence'}
+};
+
+export default function Page(){const items=['Digital artefacts','File and document metadata','Communications and message records','Public technical information','Authorised system traces','Domain and infrastructure context','Historical web material','Image provenance and reverse-image checks','Public corporate and people data','Public code and repository research','Technical change monitoring','Cross-source technical comparison'];return <>
+<PageHero title="Digital evidence is useful only when its context and limitations remain visible." visual="digital">Review digital artefacts, technical evidence, metadata, records, communications and system traces where access is lawful and authorised.</PageHero>
+<section className="section"><div className="section-head editorial-head"><div><div className="eyebrow">DIGITAL &amp; TECHNICAL</div><h2>Find context without pretending access equals truth.</h2></div><p>ORVIA can use lawful public sources and authorised material to support analysis. We do not claim hacking, covert intrusion, access-control bypass or unauthorised private-account access.</p></div><div className="simple-grid">{items.map(x=><div key={x}>{x}</div>)}</div></section>
+<section className="section editorial-split"><div><div className="eyebrow">OUTPUT</div><h2>A technical account decision-makers can actually use.</h2></div><div className="editorial-copy"><p>The output should explain what the digital material shows, what it does not show, how it was preserved, what corroborates or contradicts it, and which conclusions remain subject to human review.</p></div></section>
+</>}
