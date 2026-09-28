@@ -1,13 +1,8 @@
 import PageHero from '../../components/PageHero';
-
-export const metadata={
-  title:'About & Governance',
-  description:'ORVIA Security & Intelligence governance, evidence principles, human authority, service boundaries and verified company trust details.',
-  alternates:{canonical:'/about-governance'}
-};
-
+import {securityMedia} from '../../lib/securityMedia';
+export const metadata={title:'About & Governance',description:'ORVIA Security & Intelligence governance, evidence principles, human authority, service boundaries and verified company trust details.',alternates:{canonical:'/about-governance'}};
 export default function Page(){const principles=['Evidence before assumption','Human first and last','Provenance preserved','Dissent retained','Alternative hypotheses tested','Material conclusions verified','Consequential decisions remain human','Lawful and proportionate use','Tools are replaceable','Method and evidence discipline are not'];return <>
-<PageHero title="Intelligence should increase clarity, not power without accountability." visual="board">ORVIA combines technology with explicit boundaries, traceable evidence and human authority.</PageHero>
+<PageHero image={securityMedia.challengeVerification} imageAlt="ORVIA independent human challenge and verification" title="Intelligence should increase clarity, not power without accountability.">ORVIA combines technology with explicit boundaries, traceable evidence and human authority.</PageHero>
 <section className="section"><div className="principles">{principles.map((x,i)=><div key={x}><span>{i+1}</span><strong>{x}</strong></div>)}</div></section>
 <section className="section editorial-split"><div><div className="eyebrow">SERVICE BOUNDARIES</div><h2>Clear about what ORVIA is not.</h2></div><div className="editorial-copy"><p>ORVIA is not a police force, regulator, court, law firm or intelligence agency. ORVIA does not conduct unlawful surveillance, provide unauthorised system access or replace regulated professional judgement.</p><p>ORVIA does not make automated findings of guilt, safeguarding responsibility, clinical causation or legal liability.</p></div></section>
 <section className="section governance-panel"><div><div className="eyebrow">VERIFIED COMPANY DETAILS</div><h2>ORVIA Oversight Ltd</h2><p>Company number: <strong>16123685</strong><br/>ICO: <strong>ZC152311</strong><br/>Telephone: <strong>0330 043 3703</strong><br/>Email: <strong>hello@orvia.org.uk</strong></p></div></section>
