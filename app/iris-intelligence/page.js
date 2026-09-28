@@ -1,2 +1,18 @@
-import PageHero from '../../components/PageHero'; import InterfacePanel from '../../components/InterfacePanel'; import {securityMedia} from '../../lib/securityMedia';
-export default function Page(){const modules=['Intelligence requirement','Matter/case workspace','Entity register','Source register','Evidence ledger','Timeline','Network graph','Geospatial map','Hypothesis register','Contradictions','Missing evidence','Tasks/owners','Verification ladder','Report builder','Audit trail'];return <><PageHero image={securityMedia.challengeVerification} imageAlt="ORVIA human-led analysis, challenge and verification workflow" title="The investigation operating layer.">IRIS coordinates approved tools, evidence, bounded AI analysis, challenge, verification and human review inside one accountable workflow.</PageHero><section className="section"><InterfacePanel/></section><section className="section tone"><div className="architecture"><span>INTELLIGENCE REQUIREMENT</span><b>↓</b><span>IRIS</span><b>↓</b><span>APPROVED TOOL ROUTER</span><b>↓</b><span>HIVE EVIDENCE &amp; PROVENANCE</span><b>↓</b><span>AI ANALYST</span><b>↓</b><span>VITA / CHALLENGER</span><b>↓</b><span>VERA VERIFICATION</span><b>↓</b><span>HUMAN REVIEW</span><b>↓</b><span>REPORT / ACTION</span></div></section><section className="section"><div className="simple-grid">{modules.map(x=><div key={x}>{x}</div>)}</div></section></>}
+import PageHero from '../../components/PageHero';
+import InterfacePanel from '../../components/InterfacePanel';
+import {securityMedia} from '../../lib/securityMedia';
+export const metadata={title:'IRIS Intelligence Technology',description:'IRIS coordinates evidence, HIVE provenance, VITA challenge, VERA verification and human review inside one accountable intelligence workflow.',alternates:{canonical:'/iris-intelligence'}};
+export default function Page(){return <>
+<PageHero image={securityMedia.challengeVerification} imageAlt="ORVIA human-led challenge and verification workflow" title="The intelligence operating layer.">IRIS is the sole conductor. It routes work, holds context, assigns bounded specialist capability and tracks state. It does not make final findings.</PageHero>
+<section className="section"><InterfacePanel/></section>
+<section className="architecture-band"><div className="architecture-inner">{[
+['INPUT','Evidence · records · calls · documents · systems · forms · data'],
+['IRIS','Routes work · holds context · assigns specialist capability · tracks state'],
+['HIVE','Evidence · versions · provenance · assertions · dissent'],
+['VITA','Challenge · blind spots · alternative hypotheses · completeness'],
+['HUMAN REVIEW','Judgement · authority · accountability'],
+['VERA','Verification · effectiveness · sustained check'],
+['OUTPUT','Briefing · report · actions · assurance record']
+].map(([a,b],i)=><div className="architecture-step" key={a}><span>{String(i+1).padStart(2,'0')}</span><div><strong>{a}</strong><p>{b}</p></div></div>)}</div></section>
+<section className="section editorial-split"><div><div className="eyebrow">BOUNDARIES</div><h2>IRIS coordinates. Humans decide.</h2></div><div className="editorial-copy"><p>Specialist workers can search, organise, compare, identify gaps and assist verification within bounded roles. Any new specialist must be formally registered before operational use.</p><p>IRIS is not a new autonomous “brain” and it does not replace accountable human authority.</p></div></section>
+</>}
