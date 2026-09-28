@@ -1,0 +1,1 @@
+export default function MethodStrip({items}){return <div className="method-strip">{items.map((x,i)=><div key={x} className="method-step"><span>{String(i+1).padStart(2,'0')}</span><strong>{x}</strong></div>)}</div>}
