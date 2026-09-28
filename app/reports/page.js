@@ -1,2 +1,12 @@
 import PageHero from '../../components/PageHero';
-export default function Page(){const architecture=['Executive summary','Intelligence requirement','Scope','Key findings','Source base','Chronology','Analysis','Alternative hypotheses','Evidence gaps','Contradictions','Risks','Confidence / limitations','Required actions','Verification state','Human approval','Appendices / source register'];return <><PageHero title="Exceptional intelligence deserves exceptional reporting.">Reports designed for decision-makers, with evidence, analysis, uncertainty, verification and required action clearly separated.</PageHero><section className="section"><div className="report-architecture">{architecture.map((x,i)=><div key={x}><span>{String(i+1).padStart(2,'0')}</span><strong>{x}</strong></div>)}</div></section></>}
+
+export const metadata={
+  title:'Reports',
+  description:'Board-ready intelligence and evidence reporting with provenance, uncertainty, contradictions, limitations and human approval clearly separated.',
+  alternates:{canonical:'/reports'}
+};
+
+export default function Page(){const architecture=['Executive summary','Scope','Questions','Evidence base','Chronology','Entity relationships','Key observations','Verified facts','Unverified assertions','Contradictions','Alternative hypotheses','Missing evidence','Limitations','Human review','Actions','Verification status'];return <>
+<PageHero title="Exceptional intelligence deserves exceptional reporting." visual="reporting">Reports designed for decision-makers, with evidence, analysis, uncertainty, verification and required action clearly separated.</PageHero>
+<section className="section"><div className="section-head editorial-head"><div><div className="eyebrow">BOARD-READY OUTPUT</div><h2>Built to be read. Built to be challenged.</h2></div><p>Reporting should expose the evidential position rather than hide it behind screenshots, data dumps or unexplained confidence language.</p></div><div className="report-architecture">{architecture.map((x,i)=><div key={x}><span>{String(i+1).padStart(2,'0')}</span><strong>{x}</strong></div>)}</div></section>
+</>}
