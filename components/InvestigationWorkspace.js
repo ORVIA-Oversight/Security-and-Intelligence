@@ -3,10 +3,13 @@
 import {useEffect,useMemo,useState} from 'react';
 import Link from 'next/link';
 import {INVESTIGATION_PRODUCTS,LOCAL_CONDUCTOR} from '../lib/investigationProducts';
+import {makeWorkOrder} from '../lib/investigationRuntime';
 
 export default function InvestigationWorkspace(){
   const [selected,setSelected]=useState(INVESTIGATION_PRODUCTS[0].id);
   const [workOrder,setWorkOrder]=useState('');
+  const [matterRef,setMatterRef]=useState('');
+  const [lastPacket,setLastPacket]=useState(null);
   const [allocated,setAllocated]=useState([]);
   const [notice,setNotice]=useState('No specialist work order has been allocated yet.');
   const [questionSelection,setQuestionSelection]=useState([]);
@@ -27,7 +30,10 @@ export default function InvestigationWorkspace(){
       return;
     }
     if(!allocated.includes(product.id)) setAllocated([...allocated,product.id]);
-    setNotice(product.name+' allocated with '+questionSelection.length+' selected evidence-review questions. Specialist tool execution remains separately controlled.');
+    const packet=makeWorkOrder({matterRef,requirement:clean,product,questionIds:questionSelection});
+    setLastPacket(packet);
+    try{localStorage.setItem('orvia_si_last_work_order',JSON.stringify(packet));}catch{}
+    setNotice(product.name+' allocated as '+packet.workOrderRef+' with '+questionSelection.length+' selected evidence-review questions. Specialist tool execution remains separately controlled.');
   }
 
   return <div className="si-workspace">
@@ -107,6 +113,8 @@ export default function InvestigationWorkspace(){
           </div>
           <p>Give this specialist system a bounded requirement. The local conductor allocates the selected product and its workstreams; it does not make the final case finding.</p>
           <div className="si-question-attach"><div><small>MASTER 500 SELECTION</small><b>{questionSelection.length} questions attached</b></div><Link href="/workspace/bank">Review selection →</Link></div>
+          <label>Matter reference</label>
+          <input className="si-text-input" value={matterRef} onChange={e=>setMatterRef(e.target.value)} placeholder="Example: ORV-REV-KENSA-001"/>
           <label>Investigation requirement</label>
           <textarea value={workOrder} onChange={e=>setWorkOrder(e.target.value)} placeholder="Example: Examine the supplied SAR bundle for document provenance, chronology anomalies, deleted or purged artefacts and independent public-source corroboration. Report observations only."/>
           <div className="si-actions">
@@ -114,6 +122,7 @@ export default function InvestigationWorkspace(){
             <button className="secondary" onClick={()=>{setWorkOrder('');setNotice('Requirement cleared.')}}>Clear</button>
           </div>
           <div className="si-notice"><b>STATE</b><span>{notice}</span></div>
+          {lastPacket&&<div className="si-packet"><small>WORK ORDER PACKET</small><b>{lastPacket.workOrderRef}</b><p>{lastPacket.matterRef} · {lastPacket.product.name} · {lastPacket.questionIds.length} questions</p><div><button onClick={()=>navigator.clipboard?.writeText(JSON.stringify(lastPacket,null,2))}>Copy JSON</button><Link href="/workspace/report">Open observation report builder →</Link></div></div>}
         </div>
       </div>
 
