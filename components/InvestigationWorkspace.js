@@ -39,6 +39,10 @@ export default function InvestigationWorkspace(){
           <span><b>{p.name}</b><small>{p.code}</small></span>
         </button>)}
       </nav>
+      <Link className="si-bank-link" href="/workspace/bank">
+        <b>MASTER CORE 500</b>
+        <span>Open evidence challenge bank →</span>
+      </Link>
       <div className="si-rail-footer">
         <b>MAIN ORVIA HANDOFF</b>
         <span>Completed reports only</span>
@@ -56,7 +60,7 @@ export default function InvestigationWorkspace(){
 
       <div className="si-banner">
         <div><b>{LOCAL_CONDUCTOR.label}</b><p>{LOCAL_CONDUCTOR.boundary}</p></div>
-        <div><b>Handoff</b><p>{LOCAL_CONDUCTOR.handoff}</p></div>
+        <div><b>Master review standard</b><p>Use the Master Core 500 and mandatory controls to define what each workstream must examine before handoff.</p><Link className="si-inline-link" href="/workspace/bank">Review and select questions →</Link></div>
       </div>
 
       <div className="si-layout">
