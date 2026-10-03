@@ -1,14 +1,16 @@
 'use client';
 
 import {useMemo,useState} from 'react';
-import {MANDATORY_CONTROLS,ORVIA_PRINCIPLES,THREE_SIDES} from '../lib/evidenceReviewStandard';
+import {MANDATORY_CONTROLS,ORVIA_PRINCIPLES,THREE_SIDES,ACTIVATION_DOMAINS} from '../lib/evidenceReviewStandard';
 
 export default function MasterBankExplorer({bank}){
   const [query,setQuery]=useState('');
   const [module,setModule]=useState('all');
   const [principle,setPrinciple]=useState('all');
   const [side,setSide]=useState('all');
+  const [domain,setDomain]=useState('all');
   const [selected,setSelected]=useState([]);
+  const [saved,setSaved]=useState('');
 
   const filtered=useMemo(()=>{
     const q=query.trim().toLowerCase();
@@ -16,19 +18,31 @@ export default function MasterBankExplorer({bank}){
       if(module!=='all'&&String(item.moduleNumber)!==module) return false;
       if(principle!=='all'&&item.principle!==principle) return false;
       if(side!=='all'&&item.threeSides!==side) return false;
+      if(domain!=='all'){
+        const applicable=(item.applicable||'').toLowerCase();
+        const wanted=domain.toLowerCase();
+        if(!applicable.includes('universal')&&!applicable.includes(wanted)) return false;
+      }
       if(!q) return true;
       return [
         item.id,item.question,item.moduleTitle,item.principle,item.threeSides,
         item.why,item.evidence,item.adverse,item.unanswered,item.applicable
       ].join(' ').toLowerCase().includes(q);
     });
-  },[bank.questions,module,principle,side,query]);
+  },[bank.questions,module,principle,side,domain,query]);
 
   function toggle(id){
     setSelected(x=>x.includes(id)?x.filter(y=>y!==id):[...x,id]);
   }
 
   const selectedText=selected.join(', ');
+
+  function saveSelection(){
+    if(typeof window==='undefined') return;
+    localStorage.setItem('orvia_si_question_selection',JSON.stringify(selected));
+    localStorage.setItem('orvia_si_question_selection_saved_at',new Date().toISOString());
+    setSaved(selected.length+' questions saved to the investigation workspace.');
+  }
 
   return <div className="bank-shell">
     <section className="bank-hero">
@@ -87,6 +101,10 @@ export default function MasterBankExplorer({bank}){
           <option>All Three</option>
           {THREE_SIDES.map(x=><option key={x}>{x}</option>)}
         </select>
+        <select value={domain} onChange={e=>setDomain(e.target.value)}>
+          <option value="all">All matter domains</option>
+          {ACTIVATION_DOMAINS.map(x=><option key={x}>{x}</option>)}
+        </select>
       </div>
 
       <div className="bank-results-head">
@@ -97,7 +115,11 @@ export default function MasterBankExplorer({bank}){
       {selected.length>0&&<div className="bank-selection">
         <b>Selected question IDs</b>
         <textarea readOnly value={selectedText}/>
-        <button onClick={()=>setSelected([])}>Clear selection</button>
+        <div className="bank-selection-actions">
+          <button onClick={saveSelection}>Save to workspace</button>
+          <button onClick={()=>{setSelected([]);setSaved('')}}>Clear selection</button>
+        </div>
+        {saved&&<span className="bank-saved">{saved}</span>}
       </div>}
 
       <div className="bank-question-list">
