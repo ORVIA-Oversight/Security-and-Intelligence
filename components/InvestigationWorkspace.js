@@ -1,6 +1,6 @@
 'use client';
 
-import {useMemo,useState} from 'react';
+import {useEffect,useMemo,useState} from 'react';
 import Link from 'next/link';
 import {INVESTIGATION_PRODUCTS,LOCAL_CONDUCTOR} from '../lib/investigationProducts';
 
@@ -9,7 +9,16 @@ export default function InvestigationWorkspace(){
   const [workOrder,setWorkOrder]=useState('');
   const [allocated,setAllocated]=useState([]);
   const [notice,setNotice]=useState('No specialist work order has been allocated yet.');
+  const [questionSelection,setQuestionSelection]=useState([]);
   const product=useMemo(()=>INVESTIGATION_PRODUCTS.find(x=>x.id===selected)||INVESTIGATION_PRODUCTS[0],[selected]);
+
+  useEffect(()=>{
+    try{
+      const raw=localStorage.getItem('orvia_si_question_selection');
+      const ids=raw?JSON.parse(raw):[];
+      if(Array.isArray(ids)) setQuestionSelection(ids);
+    }catch{}
+  },[]);
 
   function allocate(){
     const clean=workOrder.trim();
@@ -18,7 +27,7 @@ export default function InvestigationWorkspace(){
       return;
     }
     if(!allocated.includes(product.id)) setAllocated([...allocated,product.id]);
-    setNotice(product.name+' allocated. This prototype records the work order only; specialist tool execution is not connected yet.');
+    setNotice(product.name+' allocated with '+questionSelection.length+' selected evidence-review questions. Specialist tool execution remains separately controlled.');
   }
 
   return <div className="si-workspace">
@@ -97,6 +106,7 @@ export default function InvestigationWorkspace(){
             <span>HUMAN AUTHORITY ACTIVE</span>
           </div>
           <p>Give this specialist system a bounded requirement. The local conductor allocates the selected product and its workstreams; it does not make the final case finding.</p>
+          <div className="si-question-attach"><div><small>MASTER 500 SELECTION</small><b>{questionSelection.length} questions attached</b></div><Link href="/workspace/bank">Review selection →</Link></div>
           <label>Investigation requirement</label>
           <textarea value={workOrder} onChange={e=>setWorkOrder(e.target.value)} placeholder="Example: Examine the supplied SAR bundle for document provenance, chronology anomalies, deleted or purged artefacts and independent public-source corroboration. Report observations only."/>
           <div className="si-actions">
