@@ -15,8 +15,7 @@ export default function Header(){
     <div className="utility-bar">
       <div className="utility-inner">
         <span>ORVIA Oversight Ltd</span>
-        <span>Evidence-led assurance</span>
-        <a href="tel:03300433703">0330 043 3703</a>
+        <a href="https://orvia.org.uk">ORVIA Oversight</a><span>Evidence-led assurance</span><a href="https://orvia.org.uk/products">Explore ORVIA</a><a href="tel:03300433703">0330 043 3703</a>
       </div>
     </div>
     <header className="site-header">
