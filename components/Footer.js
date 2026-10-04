@@ -29,9 +29,9 @@ export default function Footer(){
       <div>
         <h4>ORVIA Oversight Ltd</h4>
         <p>Company number 16123685</p>
-        <p>ICO ZC152311</p>
+        <p>Registered in England and Wales</p><p>3rd Floor, 86–90 Paul Street, London EC2A 4NE</p>
         <p>0330 043 3703</p>
-        <p>hello@orvia.org.uk</p>
+        <p>hello@orvia.org.uk</p><a href="https://orvia.org.uk/products">Explore ORVIA</a><a href="https://orvia.org.uk/privacy">Privacy</a><a href="https://orvia.org.uk/cookies">Cookies</a>
       </div>
     </div>
     <div className="footer-bottom">
