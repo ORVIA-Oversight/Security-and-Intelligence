@@ -1,0 +1,12 @@
+{
+  "standard": "ORVIA Estate Golden Master",
+  "version": "1.0.0",
+  "status": "LOCKED",
+  "product": "ORVIA Security & Intelligence",
+  "canonicalDomain": "orviasecurity.co.uk",
+  "tone": "sharp-credible-operational",
+  "policyRepo": "ORVIA-Oversight/orvia-brand-control",
+  "templateRepo": "ORVIA-Oversight/Branding-and-Website",
+  "siteGuardian": "REQUIRED",
+  "mediaPhase": "AFTER_STRUCTURAL_PASS"
+}
