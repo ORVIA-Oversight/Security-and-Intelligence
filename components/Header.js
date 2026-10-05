@@ -3,15 +3,15 @@ import Link from 'next/link';
 const links = [
   ['What We Do','/what-we-do'],
   ['Intelligence','/intelligence'],
-  ['Evidence & Verification','/evidence-verification'],
-  ['Digital & Technical Intelligence','/digital-technical-intelligence'],
+  ['Evidence','/evidence-verification'],
+  ['Digital & Technical','/digital-technical-intelligence'],
   ['Investigative Support','/investigative-support'],
-  ['IRIS Intelligence Technology','/iris-intelligence'],
-  ['About & Governance','/about-governance'],
+  ['Governance','/about-governance'],
 ];
 
 export default function Header(){
   return <>
+    <div className="estate-lock"><div className="header-inner estate-lock-inner"><a href="https://orvia.org.uk"><strong>ORVIA</strong></a><span>Security &amp; Intelligence</span><div><a href="https://orvia.org.uk/products">Explore ORVIA</a><a href="https://orviasecurity.co.uk">This product</a></div></div></div>
     <div className="utility-bar">
       <div className="utility-inner">
         <span>ORVIA Oversight Ltd</span>
@@ -22,9 +22,7 @@ export default function Header(){
     <header className="site-header">
       <div className="header-inner">
         <Link className="brand" href="/" aria-label="ORVIA Security & Intelligence home">
-          <span className="wordmark" aria-hidden="true">
-            <b>O</b><b>R</b><b>V</b><b>I</b><b>A</b>
-          </span>
+          <span className="wordmark" aria-hidden="true"><strong>ORVIA</strong></span>
           <span className="brand-copy">
             <strong>SECURITY &amp; INTELLIGENCE</strong>
             <small>AN ORVIA OVERSIGHT CAPABILITY</small>
@@ -39,6 +37,7 @@ export default function Header(){
           <div className="mobile-nav">
             <Link href="/">Home</Link>
             {links.map(([label,href]) => <Link key={href} href={href}>{label}</Link>)}
+            <Link href="/iris-intelligence">IRIS technology</Link>
             <Link href="/contact">Contact</Link>
           </div>
         </details>
