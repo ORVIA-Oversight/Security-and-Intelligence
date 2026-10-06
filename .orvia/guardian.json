@@ -1,0 +1,19 @@
+{
+  "product": "ORVIA Security & Intelligence",
+  "publicSite": true,
+  "requireTrust": true,
+  "requireCommercial": true,
+  "canonicalMethod": [
+    "OBSERVE",
+    "REVIEW",
+    "VERIFY",
+    "INTERPRET",
+    "ACCOUNTABLE"
+  ],
+  "vera": [
+    "IMPLEMENTED",
+    "VERIFIED",
+    "EFFECTIVE",
+    "SUSTAINED"
+  ]
+}
