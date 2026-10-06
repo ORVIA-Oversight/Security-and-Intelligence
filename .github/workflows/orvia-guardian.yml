@@ -1,0 +1,29 @@
+name: ORVIA Guardian
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  guardian:
+    name: ORVIA brief and quality gate
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Use Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Guardian estate check
+        run: node scripts/guardian-check.mjs
+      - name: Build if this repository has an npm build
+        shell: bash
+        run: |
+          if [ -f package.json ]; then
+            npm install --ignore-scripts --no-audit --no-fund
+            npm run build --if-present
+          else
+            echo "Static repository: no npm build required"
+          fi
