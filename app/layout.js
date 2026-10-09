@@ -8,7 +8,7 @@ const sourceSerif = Source_Serif_4({ subsets:['latin'], variable:'--font-source-
 const montserrat = Montserrat({ subsets:['latin'], variable:'--font-montserrat', display:'swap' });
 
 export const metadata = {
-  metadataBase: new URL('https://orviasecurity.co.uk'),
+  metadataBase: new URL('https://www.orviasecurity.co.uk'),
   title: {
     default: 'ORVIA Security & Intelligence',
     template: '%s | ORVIA Security & Intelligence',
@@ -17,7 +17,7 @@ export const metadata = {
   alternates: { canonical: '/' },
   openGraph: {
     type: 'website',
-    url: 'https://orviasecurity.co.uk',
+    url: 'https://www.orviasecurity.co.uk',
     siteName: 'ORVIA Security & Intelligence',
     title: 'ORVIA Security & Intelligence',
     description: 'Evidence-led intelligence. Human judgement. Clear provenance.',

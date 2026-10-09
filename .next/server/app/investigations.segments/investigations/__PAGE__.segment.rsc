@@ -1,0 +1,20 @@
+1:"$Sreact.fragment"
+3:I[97367,["/_next/static/chunks/3fntmmi971322.js"],"OutletBoundary"]
+4:"$Sreact.suspense"
+8:I[97367,["/_next/static/chunks/3fntmmi971322.js"],"ViewportBoundary"]
+9:I[97367,["/_next/static/chunks/3fntmmi971322.js"],"MetadataBoundary"]
+b:I[39756,["/_next/static/chunks/3fntmmi971322.js"],"default"]
+c:I[37457,["/_next/static/chunks/3fntmmi971322.js"],"default"]
+7:X
+e:X
+e:C
+0:{"buildId":"WegqAs6kD1eFrCUQ-js4Y","data":[{"rsc":["$","$1","c",{"children":["$L2",null,["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"isPartial":"$@6","staleTime":"$7","varyParams":null},{"rsc":["$","$1","h",{"children":[null,["$","$L8",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","div",null,{"hidden":true,"children":["$","$L9",null,{"children":["$","$4",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"ORVIA Security & Intelligence"}],["$","meta","1",{"name":"description","content":"Evidence-led intelligence, evidence verification and investigative support with clear provenance and human authority."}],["$","link","2",{"rel":"canonical","href":"https://www.orviasecurity.co.uk"}],["$","meta","3",{"property":"og:title","content":"ORVIA Security & Intelligence"}],["$","meta","4",{"property":"og:description","content":"Evidence-led intelligence. Human judgement. Clear provenance."}],["$","meta","5",{"property":"og:url","content":"https://www.orviasecurity.co.uk"}],["$","meta","6",{"property":"og:site_name","content":"ORVIA Security & Intelligence"}],["$","meta","7",{"property":"og:type","content":"website"}],["$","meta","8",{"name":"twitter:card","content":"summary"}],["$","meta","9",{"name":"twitter:title","content":"ORVIA Security & Intelligence"}],["$","meta","10",{"name":"twitter:description","content":"Evidence-led intelligence. Human judgement. Clear provenance."}]]}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],"isPartial":"$@a","staleTime":"$7","varyParams":null},{"rsc":["$","$1","c",{"children":[null,["$","$Lb",null,{"parallelRouterKey":"children","template":["$","$Lc",null,{}]}]]}],"isPartial":"$@d","staleTime":"$7","varyParams":"$e"}],"isUpgradeableISRFallback":false,"a":"$@f","rootVaryParams":null,"needsRuntimeRequest":"$@10"}
+2:E{"digest":"NEXT_REDIRECT;replace;/investigative-support;307;"}
+5:null
+10:true
+7:300
+7:C
+f:0
+a:"$undefined"
+d:"$undefined"
+6:"$undefined"

@@ -1,0 +1,30 @@
+1:"$Sreact.fragment"
+2:I[22016,["/_next/static/chunks/3fntmmi971322.js","/_next/static/chunks/22i43cg4l4-dq.js"],""]
+3:I[97367,["/_next/static/chunks/3fntmmi971322.js"],"OutletBoundary"]
+4:"$Sreact.suspense"
+8:I[97367,["/_next/static/chunks/3fntmmi971322.js"],"ViewportBoundary"]
+9:I[97367,["/_next/static/chunks/3fntmmi971322.js"],"MetadataBoundary"]
+7:X
+16:X
+16:C
+0:{"buildId":"WegqAs6kD1eFrCUQ-js4Y","data":[{"rsc":["$","$1","c",{"children":[[["$","section",null,{"className":"page-hero","children":[["$","div",null,{"className":"hero-copy","children":[["$","div",null,{"className":"eyebrow","children":"ORVIA SECURITY & INTELLIGENCE"}],["$","h1",null,{"children":"From fragmented material to a review that can survive challenge."}],["$","p",null,{"children":"Structured support for complex enquiries using chronology, relationships, evidence matrices, alternative hypotheses and missing-evidence discipline."}],["$","p",null,{"className":"authority-line","children":"AI supports the work. Authorised humans retain judgement, authority and accountability."}],["$","div",null,{"className":"actions","children":[["$","$L2",null,{"className":"btn btn-primary","href":"/contact","children":"REQUEST A REVIEW"}],["$","$L2",null,{"className":"btn btn-secondary","href":"#how-it-works","children":"SEE HOW IT WORKS"}]]}]]}],["$","div",null,{"className":"hero-media shot shot-hero","role":"img","aria-label":"ORVIA investigation workspace and chronology review","style":{"backgroundImage":"linear-gradient(180deg,rgba(250,247,242,.06),rgba(11,36,80,.10)),url(\"/media/security/07-investigation-workspace.png\")","backgroundSize":"cover","backgroundPosition":"center"},"children":[false,["$","div",null,{"className":"media-caption","children":"Evidence • relationships • chronology • verification"}]]}]]}],["$","section",null,{"className":"section","children":["$","div",null,{"className":"simple-grid","children":[["$","div","Structured review",{"children":"Structured review"}],["$","div","Terms of reference support",{"children":"Terms of reference support"}],["$","div","Evidence indexing",{"children":"Evidence indexing"}],["$","div","Chronology reconstruction",{"children":"Chronology reconstruction"}],["$","div","Relationship mapping",{"children":"Relationship mapping"}],["$","div","Evidence matrix",{"children":"Evidence matrix"}],["$","div","Alternative hypotheses",{"children":"Alternative hypotheses"}],["$","div","Discriminating evidence",{"children":"Discriminating evidence"}],["$","div","Missing evidence",{"children":"Missing evidence"}],["$","div","Contradiction analysis",{"children":"Contradiction analysis"}],["$","div","Red-team challenge",{"children":"Red-team challenge"}],["$","div","Pre-closure challenge",{"children":"Pre-closure challenge"}],["$","div","Report preparation",{"children":"Report preparation"}],["$","div","Reopen triggers",{"children":"Reopen triggers"}]]}]}],["$","section",null,{"className":"section human-authority","children":[["$","div",null,{"className":"human-copy","children":[["$","div",null,{"className":"eyebrow","children":"SERIOUS CONCERN DISCIPLINE"}],["$","h2",null,{"children":"Protection and inquiry remain separate."}],["$","p",null,{"children":"Precautionary protection should not silently become a finding. Inquiry should test competing explanations against evidence before closure."}]]}],["$","div",null,{"className":"authority-card","children":[["$","span",null,{"children":"RETAIN THROUGHOUT"}],["$","ul",null,{"children":[["$","li",null,{"children":"Alternative hypotheses"}],["$","li",null,{"children":"Discriminating evidence"}],["$","li",null,{"children":"Missing evidence"}],["$","li",null,{"children":"Preserved dissent"}]]}],["$","strong",null,{"children":"No statutory investigation powers are claimed."}]]}]]}]],[["$","script","script-0",{"src":"/_next/static/chunks/22i43cg4l4-dq.js","async":true}]],["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"isPartial":"$@6","staleTime":"$7","varyParams":null},{"rsc":["$","$1","h",{"children":[null,["$","$L8",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","div",null,{"hidden":true,"children":["$","$L9",null,{"children":["$","$4",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"Investigative Support | ORVIA Security & Intelligence"}],["$","meta","1",{"name":"description","content":"Structured review, chronology, relationship mapping, evidence matrix, alternative hypotheses and challenge from ORVIA Security & Intelligence."}],["$","link","2",{"rel":"canonical","href":"https://www.orviasecurity.co.uk/investigative-support"}],"$La","$Lb","$Lc","$Ld","$Le","$Lf","$L10","$L11"]}]}]}],"$L12"]}],"isPartial":"$@13","staleTime":"$7","varyParams":null},{"rsc":"$L14","isPartial":"$@15","staleTime":"$7","varyParams":"$16"}],"isUpgradeableISRFallback":false,"a":"$@17","rootVaryParams":null,"needsRuntimeRequest":"$@18"}
+19:I[39756,["/_next/static/chunks/3fntmmi971322.js"],"default"]
+1a:I[37457,["/_next/static/chunks/3fntmmi971322.js"],"default"]
+5:null
+a:["$","meta","3",{"property":"og:title","content":"ORVIA Security & Intelligence"}]
+b:["$","meta","4",{"property":"og:description","content":"Evidence-led intelligence. Human judgement. Clear provenance."}]
+c:["$","meta","5",{"property":"og:url","content":"https://www.orviasecurity.co.uk"}]
+d:["$","meta","6",{"property":"og:site_name","content":"ORVIA Security & Intelligence"}]
+e:["$","meta","7",{"property":"og:type","content":"website"}]
+f:["$","meta","8",{"name":"twitter:card","content":"summary"}]
+10:["$","meta","9",{"name":"twitter:title","content":"ORVIA Security & Intelligence"}]
+11:["$","meta","10",{"name":"twitter:description","content":"Evidence-led intelligence. Human judgement. Clear provenance."}]
+12:["$","meta",null,{"name":"next-size-adjust","content":""}]
+14:["$","$1","c",{"children":[null,["$","$L19",null,{"parallelRouterKey":"children","template":["$","$L1a",null,{}]}]]}]
+18:true
+7:300
+7:C
+17:0
+13:"$undefined"
+15:"$undefined"
+6:"$undefined"
