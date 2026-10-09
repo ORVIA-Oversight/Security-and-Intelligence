@@ -2,7 +2,7 @@ import Link from 'next/link';
 import PageHero from '../components/PageHero';
 import InterfacePanel from '../components/InterfacePanel';
 import VisualStory from '../components/VisualStory';
-import {securityMedia} from '../lib/securityMedia';
+import {securityMedia,securityFilms} from '../lib/securityMedia';
 
 const capabilities=[
   ['Intelligence','Define the question, assemble the information, test competing explanations and support a human decision.','Evidence used','Records, public sources, organisational information and authorised material.','You receive','A structured intelligence brief with gaps, limitations and provenance.','/intelligence'],
@@ -117,10 +117,10 @@ export default function Home(){
     </section>
 
     <section className="film-band">
-      <div className="film-copy"><div className="eyebrow">EXPLAINER FILMS</div><h2>See the capability. See how it connects.</h2><p>Two short films show what ORVIA Security & Intelligence offers and how the intelligence workflow connects through the wider ORVIA operating model.</p></div>
+      <div className="film-copy"><div className="eyebrow">EXPLAINER FILMS</div><h2>See the capability. See how it connects.</h2><p>A short film shows what ORVIA Security & Intelligence offers. A second film on the connected operating model is being re-made and will be added once it has been reviewed.</p></div>
       <div className="film-grid">
-        <article className="film-card"><span>FILM 01 · 10 SEC</span><div className="film-player"><video controls muted playsInline preload="metadata" poster={securityMedia.intelligenceCommand}><source src="https://raw.githubusercontent.com/ORVIA-Oversight/Security-and-Intelligence/main/gemini_generated_video_51db98d9.mp4" type="video/mp4"/></video></div><h3>From fragmented information to defensible intelligence</h3><p>Intelligence, investigations, digital evidence, OSINT, monitoring and reporting — brought together around the question that needs answering.</p></article>
-        <article className="film-card"><span>FILM 02 · 10 SEC</span><div className="film-player"><video controls muted playsInline preload="metadata" poster={securityMedia.challengeVerification}><source src="https://raw.githubusercontent.com/ORVIA-Oversight/Security-and-Intelligence/main/gemini_generated_video_22ce0ca2.mp4" type="video/mp4"/></video></div><h3>Connected intelligence. Human authority.</h3><p>IRIS coordinates, HIVE preserves, VITA challenges, VERA verifies and people retain the decision.</p></article>
+        <article className="film-card"><span>FILM 01 · 10 SEC</span><div className="film-player"><video controls muted playsInline preload="metadata" poster={securityMedia.intelligenceCommand}><source src={securityFilms.film01} type="video/mp4"/></video></div><h3>From fragmented information to defensible intelligence</h3><p>Intelligence, investigations, digital evidence, OSINT, monitoring and reporting — brought together around the question that needs answering.</p></article>
+        <article className="film-card film-card-pending"><span>FILM 02 · IN PRODUCTION</span><h3>Connected intelligence. Human authority.</h3><p>IRIS coordinates, HIVE preserves, VITA challenges, VERA verifies and people retain the decision. This film is being re-made and has been withdrawn until it passes review.</p></article>
       </div>
     </section>
 

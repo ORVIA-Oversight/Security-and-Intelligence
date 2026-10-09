@@ -1,0 +1,21 @@
+{
+  "/_global-error/page": "/_global-error",
+  "/_not-found/page": "/_not-found",
+  "/about-governance/page": "/about-governance",
+  "/contact/page": "/contact",
+  "/digital-evidence-osint/page": "/digital-evidence-osint",
+  "/digital-technical-intelligence/page": "/digital-technical-intelligence",
+  "/evidence-verification/page": "/evidence-verification",
+  "/intelligence/page": "/intelligence",
+  "/investigations/page": "/investigations",
+  "/investigative-support/page": "/investigative-support",
+  "/iris-intelligence/page": "/iris-intelligence",
+  "/monitoring-risk/page": "/monitoring-risk",
+  "/page": "/",
+  "/privacy/page": "/privacy",
+  "/reports/page": "/reports",
+  "/what-we-do/page": "/what-we-do",
+  "/workspace/bank/page": "/workspace/bank",
+  "/workspace/page": "/workspace",
+  "/workspace/report/page": "/workspace/report"
+}

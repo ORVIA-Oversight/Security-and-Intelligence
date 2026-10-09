@@ -1,0 +1,190 @@
+{
+  "version": 3,
+  "pages404": true,
+  "appType": "app",
+  "caseSensitive": false,
+  "basePath": "",
+  "redirects": [
+    {
+      "source": "/:path+/",
+      "destination": "/:path+",
+      "internal": true,
+      "priority": true,
+      "statusCode": 308,
+      "regex": "^(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))/$"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/:path*",
+      "headers": [
+        {
+          "key": "Content-Security-Policy",
+          "value": "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self' data:; media-src 'self'; connect-src 'self'; frame-src 'none'; frame-ancestors 'none'; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests"
+        },
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "DENY"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        },
+        {
+          "key": "Permissions-Policy",
+          "value": "camera=(), microphone=(), geolocation=(), payment=(), usb=(), browsing-topics=()"
+        },
+        {
+          "key": "Cross-Origin-Opener-Policy",
+          "value": "same-origin"
+        }
+      ],
+      "regex": "^(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))?(?:/)?$"
+    }
+  ],
+  "onMatchHeaders": [],
+  "rewrites": {
+    "beforeFiles": [],
+    "afterFiles": [],
+    "fallback": []
+  },
+  "dynamicRoutes": [],
+  "staticRoutes": [
+    {
+      "page": "/",
+      "regex": "^/(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/(?:/)?$"
+    },
+    {
+      "page": "/_global-error",
+      "regex": "^/_global\\-error(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/_global\\-error(?:/)?$"
+    },
+    {
+      "page": "/_not-found",
+      "regex": "^/_not\\-found(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/_not\\-found(?:/)?$"
+    },
+    {
+      "page": "/about-governance",
+      "regex": "^/about\\-governance(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/about\\-governance(?:/)?$"
+    },
+    {
+      "page": "/contact",
+      "regex": "^/contact(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/contact(?:/)?$"
+    },
+    {
+      "page": "/digital-evidence-osint",
+      "regex": "^/digital\\-evidence\\-osint(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/digital\\-evidence\\-osint(?:/)?$"
+    },
+    {
+      "page": "/digital-technical-intelligence",
+      "regex": "^/digital\\-technical\\-intelligence(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/digital\\-technical\\-intelligence(?:/)?$"
+    },
+    {
+      "page": "/evidence-verification",
+      "regex": "^/evidence\\-verification(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/evidence\\-verification(?:/)?$"
+    },
+    {
+      "page": "/intelligence",
+      "regex": "^/intelligence(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/intelligence(?:/)?$"
+    },
+    {
+      "page": "/investigations",
+      "regex": "^/investigations(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/investigations(?:/)?$"
+    },
+    {
+      "page": "/investigative-support",
+      "regex": "^/investigative\\-support(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/investigative\\-support(?:/)?$"
+    },
+    {
+      "page": "/iris-intelligence",
+      "regex": "^/iris\\-intelligence(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/iris\\-intelligence(?:/)?$"
+    },
+    {
+      "page": "/monitoring-risk",
+      "regex": "^/monitoring\\-risk(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/monitoring\\-risk(?:/)?$"
+    },
+    {
+      "page": "/privacy",
+      "regex": "^/privacy(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/privacy(?:/)?$"
+    },
+    {
+      "page": "/reports",
+      "regex": "^/reports(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/reports(?:/)?$"
+    },
+    {
+      "page": "/what-we-do",
+      "regex": "^/what\\-we\\-do(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/what\\-we\\-do(?:/)?$"
+    },
+    {
+      "page": "/workspace",
+      "regex": "^/workspace(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/workspace(?:/)?$"
+    },
+    {
+      "page": "/workspace/bank",
+      "regex": "^/workspace/bank(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/workspace/bank(?:/)?$"
+    },
+    {
+      "page": "/workspace/report",
+      "regex": "^/workspace/report(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/workspace/report(?:/)?$"
+    }
+  ],
+  "dataRoutes": [],
+  "rsc": {
+    "header": "rsc",
+    "varyHeader": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch",
+    "prefetchHeader": "next-router-prefetch",
+    "didPostponeHeader": "x-nextjs-postponed",
+    "contentTypeHeader": "text/x-component",
+    "suffix": ".rsc",
+    "prefetchSegmentHeader": "next-router-segment-prefetch",
+    "prefetchSegmentSuffix": ".segment.rsc",
+    "prefetchSegmentDirSuffix": ".segments",
+    "clientParamParsing": false,
+    "dynamicRSCPrerender": false
+  },
+  "rewriteHeaders": {
+    "pathHeader": "x-nextjs-rewritten-path",
+    "queryHeader": "x-nextjs-rewritten-query"
+  }
+}

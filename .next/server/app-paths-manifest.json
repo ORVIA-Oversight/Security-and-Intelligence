@@ -1,0 +1,21 @@
+{
+  "/_global-error/page": "app/_global-error/page.js",
+  "/_not-found/page": "app/_not-found/page.js",
+  "/about-governance/page": "app/about-governance/page.js",
+  "/contact/page": "app/contact/page.js",
+  "/digital-evidence-osint/page": "app/digital-evidence-osint/page.js",
+  "/digital-technical-intelligence/page": "app/digital-technical-intelligence/page.js",
+  "/evidence-verification/page": "app/evidence-verification/page.js",
+  "/intelligence/page": "app/intelligence/page.js",
+  "/investigations/page": "app/investigations/page.js",
+  "/investigative-support/page": "app/investigative-support/page.js",
+  "/iris-intelligence/page": "app/iris-intelligence/page.js",
+  "/monitoring-risk/page": "app/monitoring-risk/page.js",
+  "/page": "app/page.js",
+  "/privacy/page": "app/privacy/page.js",
+  "/reports/page": "app/reports/page.js",
+  "/what-we-do/page": "app/what-we-do/page.js",
+  "/workspace/bank/page": "app/workspace/bank/page.js",
+  "/workspace/page": "app/workspace/page.js",
+  "/workspace/report/page": "app/workspace/report/page.js"
+}

@@ -1,0 +1,20 @@
+1:"$Sreact.fragment"
+2:I[39627,["/_next/static/chunks/3fntmmi971322.js","/_next/static/chunks/3kmi7jm3ufb0c.js"],"default"]
+3:I[97367,["/_next/static/chunks/3fntmmi971322.js"],"OutletBoundary"]
+4:"$Sreact.suspense"
+8:I[97367,["/_next/static/chunks/3fntmmi971322.js"],"ViewportBoundary"]
+9:I[97367,["/_next/static/chunks/3fntmmi971322.js"],"MetadataBoundary"]
+b:I[39756,["/_next/static/chunks/3fntmmi971322.js"],"default"]
+c:I[37457,["/_next/static/chunks/3fntmmi971322.js"],"default"]
+7:X
+e:X
+e:C
+0:{"buildId":"WegqAs6kD1eFrCUQ-js4Y","data":[{"rsc":["$","$1","c",{"children":[["$","$L2",null,{}],[["$","script","script-0",{"src":"/_next/static/chunks/3kmi7jm3ufb0c.js","async":true}]],["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"isPartial":"$@6","staleTime":"$7","varyParams":null},{"rsc":["$","$1","h",{"children":[null,["$","$L8",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","div",null,{"hidden":true,"children":["$","$L9",null,{"children":["$","$4",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"Investigation Workspace | ORVIA Security & Intelligence"}],["$","meta","1",{"name":"description","content":"ORVIA Security & Intelligence workspace for separate specialist investigation products and controlled report handoff."}],["$","meta","2",{"name":"robots","content":"noindex, nofollow"}],["$","link","3",{"rel":"canonical","href":"https://www.orviasecurity.co.uk"}],["$","meta","4",{"property":"og:title","content":"ORVIA Security & Intelligence"}],["$","meta","5",{"property":"og:description","content":"Evidence-led intelligence. Human judgement. Clear provenance."}],["$","meta","6",{"property":"og:url","content":"https://www.orviasecurity.co.uk"}],["$","meta","7",{"property":"og:site_name","content":"ORVIA Security & Intelligence"}],["$","meta","8",{"property":"og:type","content":"website"}],["$","meta","9",{"name":"twitter:card","content":"summary"}],["$","meta","10",{"name":"twitter:title","content":"ORVIA Security & Intelligence"}],["$","meta","11",{"name":"twitter:description","content":"Evidence-led intelligence. Human judgement. Clear provenance."}]]}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],"isPartial":"$@a","staleTime":"$7","varyParams":null},{"rsc":["$","$1","c",{"children":[null,["$","$Lb",null,{"parallelRouterKey":"children","template":["$","$Lc",null,{}]}]]}],"isPartial":"$@d","staleTime":"$7","varyParams":"$e"}],"isUpgradeableISRFallback":false,"a":"$@f","rootVaryParams":null,"needsRuntimeRequest":"$@10"}
+5:null
+10:true
+7:300
+7:C
+f:0
+a:"$undefined"
+d:"$undefined"
+6:"$undefined"
