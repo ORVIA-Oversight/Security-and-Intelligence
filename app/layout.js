@@ -1,4 +1,5 @@
 import './globals.css';
+import '../public/orvia-shell/orvia-estate-shell.css';
 import { Source_Serif_4, Montserrat } from 'next/font/google';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
